@@ -17,7 +17,7 @@ export const CookiesPage: React.FC<CookiesPageProps> = (props: CookiesPageProps)
     <Page id="tickerr-cookies-page">      
       <div id="tickerr-cookie-policy" className="tickerr-legal-policy">
         { //@ts-ignore
-          <div name="termly-embed" data-id="9fa49011-7e47-44ca-b759-a996ff7f9ab4" data-type="iframe" />
+          <div name="termly-embed" data-id="aa05a99b-3b6b-41f2-a9a6-5b9d84fa73f9" data-type="iframe" />
         }
       </div>
     </Page>
