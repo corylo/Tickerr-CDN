@@ -1,0 +1,64 @@
+#tickerr-navbar {  
+  animation: fadeInDown 0.4s ease-in;
+  background: linear-gradient(to bottom, gray(40), transparent);
+  height: 50px;
+  left: 0px;
+  padding: 10px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: calc(100vw - 20px);
+  z-index: 10000;
+
+  .tickerr-brand {
+    display: inline-block;
+  }
+
+  #tickerr-navbar-items {    
+    margin: 10px;
+    pointer-events: all;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    .tickerr-navbar-item {
+      border-radius: 6px;
+      color: $themeColor;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      outline: none;
+      padding: 0px 20px;
+      vertical-align: top;
+
+      &:hover,
+      &:focus {
+        background-color: rgba($themeColor, 0.5);
+        color: white;
+        cursor: pointer;
+      }
+
+      &:nth-child(n + 2) {        
+        margin-left: 10px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .tickerr-navbar-button {
+      background-color: transparent;
+      border: none;
+      padding: 0px 10px;
+
+      i {
+        color: white;
+        font-size: 1.5em;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  }
+}
