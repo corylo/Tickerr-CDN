@@ -1,5 +1,5 @@
 {
-  "name": "tickerr-legal",
+  "name": "tickerr-cdn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "build:prod": "cross-env NODE_ENV=production webpack --mode production",
     "deploy": "npm run clean && npm run build && firebase deploy --only hosting",
     "deploy:prod": "npm run clean && npm run build:prod && firebase deploy --only hosting",
-    "set:prod": "firebase use tickerr-legal",
+    "set:prod": "firebase use tickerr-tv-cdn",
     "projects": "firebase projects:list",
     "pd": "git push && npm run deploy"
   },
@@ -28,6 +28,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
+    "copy-webpack-plugin": "^8.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "html-webpack-plugin": "^4.5.1",

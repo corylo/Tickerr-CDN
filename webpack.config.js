@@ -1,7 +1,8 @@
 const webpack = require("webpack"),
   path = require("path");
 
-const HtmlPlugin = require("html-webpack-plugin"),
+const CopyPlugin = require("copy-webpack-plugin"),
+  HtmlPlugin = require("html-webpack-plugin"),
   MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
@@ -23,6 +24,14 @@ const config = {
       template: path.resolve(__dirname, "tickerr-client/index.html"),
       filename: "index.html",
       favicon: "tickerr-client/img/favicon.png"
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "tickerr-client/img",
+          to: "img"
+        }
+      ],
     })
   ]
 }
