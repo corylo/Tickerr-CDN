@@ -15,5 +15,3 @@ firebase-debug.log*
 config/
 
 public/
-
-functions/lib/
